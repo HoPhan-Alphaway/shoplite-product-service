@@ -30,7 +30,7 @@ public class ProductService {
 
 	@Cacheable(cacheNames = "product-list", key = "'all'")
 	public List<ProductView> findAll() {
-		log.info("Cache miss: loading product list from database");
+		log.info("Cache miss: loading product list from database sssssssssssssssssss");
 		return repository.findAllByOrderByIdAsc().stream().map(ProductView::of).toList();
 	}
 
